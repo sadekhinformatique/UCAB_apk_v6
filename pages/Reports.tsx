@@ -55,7 +55,8 @@ export const Reports: React.FC = () => {
     doc.rect(14, 45, 180, 25, 'F');
     doc.text(`Total Entrées: ${totalIncome.toFixed(2)} €`, 20, 55);
     doc.text(`Total Sorties: ${totalExpense.toFixed(2)} €`, 20, 62);
-    doc.setFont(undefined, 'bold');
+    // Fix: Explicitly use "helvetica" instead of undefined
+    doc.setFont("helvetica", 'bold');
     doc.text(`Balance: ${balance.toFixed(2)} €`, 120, 60);
 
     // Table
