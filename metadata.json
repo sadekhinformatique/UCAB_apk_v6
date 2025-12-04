@@ -1,0 +1,5 @@
+{
+  "name": "SAS Contrôle Financier",
+  "description": "Application web complète de gestion financière pour associations, avec dashboard, gestion des transactions et membres.",
+  "requestFramePermissions": []
+}
